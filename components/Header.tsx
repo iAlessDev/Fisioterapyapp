@@ -140,7 +140,7 @@ export default function Header() {
           </Link>
 
           {/* Separador */}
-          <div className="h-10 w-[3px] bg-orange-500 mx-2" />
+          <div className="h-10 w-3px bg-orange-500 mx-2" />
 
           {/* Agenda */}
           <div className="m-5">
