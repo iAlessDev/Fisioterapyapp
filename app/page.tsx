@@ -1,16 +1,16 @@
 import Link from "next/link";
-import { Calendar, ChevronRight} from "lucide-react";
+import Slider from "@/components/Slider";
+import { Calendar, ChevronRight, Dot } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="
-              grid grid-cols-2 
-              gap-4  
-              bg-[url('/PageBackground.png')]
+    <div className="grid grid-cols-2">
+                <div className="bg-[url('/PageBackground.png')]
               bg-no-repeat
               bg-bottom-left
               bg-contain">
-      <div className="
+ <div className="
+              
               w-fit 
               mx-auto 
               text-left
@@ -78,16 +78,31 @@ export default function Home() {
         </div>
 
       </div>
+                </div>
+     
       
       <div className="bg-green-500">
         Second div
       </div>
 
-      <div className="col-span-2 bg-yellow-500">
-        third <div></div>
-      </div>
-    
+    <div className="
+    bg-[url('/slides-background.png')]
+    col-span-2 py-10 px-6 flex justify-center">
+
+        <div className="w-full max-w-6xl mx-aut space-y-0">
+
+          <h1 className="text-4xl font-bold text-center">
+            ¿Cómo podemos ayudarte?
+          </h1>
+
+          <img src="/line-dot.png" alt="" 
+          className="mx-auto" width="180" height="140"/>         
+
+          <Slider /> 
+        </div>
     </div>
+    
+  </div>
     
 
 
