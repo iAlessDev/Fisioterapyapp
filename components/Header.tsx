@@ -105,7 +105,7 @@ export default function Header() {
         </div>
 
         <Link
-          href="/nosotros"
+          href="/about-us"
           className="hover:text-orange-500 transition-colors"
         >
           Nosotros
