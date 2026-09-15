@@ -1,9 +1,15 @@
+import { Users, Award, Heart } from "lucide-react";
+
 export default function AboutUs() {
     return (
         <div className="text-center flex flex-col gap-10">
             <div className="
-    
-            ">
+                bg-[url('/about-us/body-background.png')]
+                bg-size-[150px_auto]
+                bg-no-repeat
+                bg-bottom-right
+              "
+              >
                 <h2 className="text-2xl font-bold text-green-500">
                     SOBRE NOSOTROS
                 </h2>
@@ -86,13 +92,107 @@ export default function AboutUs() {
                     </div>
                 </div>
             </div>
-            <div>
+            <div className="
+                bg-[url('/about-us/body-background.png')]
+                bg-size-[200px_auto]
+                bg-no-repeat
+                bg-bottom-left
+              "
+              >
                 <h1 className="text-3xl font-bold text-black">
                     Nuestro{" "}
                     <span className="text-orange-500">
                     equipo
                     </span>
                 </h1>
+                <img
+                    src="/about-us/line.png"
+                    alt="Historia de la clínica"
+                    className="w-30 mx-auto"
+                />
+
+                <div className="flex items-center justify-center gap-4 my-10">
+                    <div className="flex items-center">
+                        <img
+                            src="/about-us/bryant.jpeg"
+                            alt="bryant-fisioterapeuta"
+                            className="w-50 h-50 rounded-full object-cover object-top"
+                        />
+
+                        <div className="mx-4 text-center">
+                            <h2 className="text-xl font-bold text-black">
+                                Lic. Bryant
+                            </h2>
+
+                            <h3 className="text-lg font-semibold text-orange-500">
+                                Fisioterapeuta
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div className="flex items-center">
+                        <img
+                                src="/about-us/fabian.jpeg"
+                                alt="fabian-fisioterapeuta"
+                                className="w-50 h-50 rounded-full object-cover object-top"
+                        />
+
+                        <div className="mx-4 text-center">
+                            <h2 className="text-xl font-bold text-black">
+                                Lic. Fabian
+                            </h2>
+
+                            <h3 className="text-lg font-semibold text-orange-500">
+                                Fisioterapeuta
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div className="grid grid-cols-3 mb-5">
+                    {/* Pacientes */}
+                    <div className="flex items-center justify-center gap-5 px-8">
+                        <Users className="w-14 h-14 text-teal-700" strokeWidth={2} />
+
+                        <div className="text-left">
+                            <h3 className="text-xl font-bold text-slate-900">
+                            +500
+                            </h3>
+
+                            <p className="text-xl text-slate-700">
+                            pacientes atendidos
+                            </p>
+                        </div>
+                    </div>
+                    
+                    {/* Experiencia */}
+                    <div className="flex items-center justify-center gap-5 px-8 border-l border-gray-500">
+                        <Award className="w-14 h-14 text-teal-700" strokeWidth={2} />
+                        <div className="text-left">
+                            <h3 className="text-xl font-bold text-slate-900">
+                            +10 años
+                            </h3>
+
+                            <p className="text-xl text-slate-700">
+                            de experiencia
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Atención personalizada */}
+                    <div className="flex items-center justify-center gap-5 px-8 border-l border-gray-500">
+                        <Heart className="w-14 h-14 text-teal-700" strokeWidth={2} />
+
+                        <div className="text-left">
+                            <h3 className="text-xl font-bold text-slate-900">
+                            Atención personalizada
+                            </h3>
+
+                            <p className="text-xl text-slate-700">
+                            Porque cada persona es única
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )
