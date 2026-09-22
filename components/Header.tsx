@@ -119,7 +119,7 @@ export default function Header() {
         </Link>
 
         <Link
-          href="/contacto"
+          href="/contact"
           className="hover:text-orange-500 transition-colors"
         >
           Contacto
